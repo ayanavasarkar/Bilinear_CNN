@@ -1,0 +1,9 @@
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+import glob
+
+cv_img = cv2.imread ("image1198.tif")
+blur=cv2.bilateralFilter(cv_img,9,75,75)
+cv2.imwrite('biimage1198.tif',blur)
+#cv2.waitKey(0)
